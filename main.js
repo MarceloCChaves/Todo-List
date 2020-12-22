@@ -14,4 +14,7 @@ btnClean.addEventListener('click', function(){
         txt.value = "";
         btnClean.focus();
 });
+ul.addEventListener('click', function(e){
+    e.target.parentNode.removeChild(e.target);
+})
  
