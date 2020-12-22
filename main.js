@@ -15,6 +15,8 @@ btnClean.addEventListener('click', function(){
         btnClean.focus();
 });
 ul.addEventListener('click', function(e){
-    e.target.parentNode.removeChild(e.target);
+    if(confirm("Quer remover a tarefa? "+ e.target.textContent) === true){
+        e.target.parentNode.removeChild(e.target);
+    }
 })
  
